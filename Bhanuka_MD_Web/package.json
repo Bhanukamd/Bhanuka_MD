@@ -1,0 +1,30 @@
+{
+  "name": "robin-web-bot",
+  "version": "1.0.0",
+  "description": "A multifunctional WhatsApp bot with web-based pairing code.",
+  "main": "index.js",
+  "scripts": {
+    "start": "pm2 start index.js --name robin --attach --deep-monitoring",
+    "stop": "pm2 stop robin",
+    "restart": "pm2 restart robin",
+    "dev": "node index.js"
+  },
+  "dependencies": {
+    "@whiskeysockets/baileys": "^6.7.18",
+    "awesome-phonenumber": "^7.5.0",
+    "body-parser": "^2.2.0",
+    "express": "^5.1.0",
+    "megajs": "^1.3.8",
+    "path": "^0.12.7",
+    "phone": "^3.1.66",
+    "pino": "^9.8.0",
+    "pm2": "^6.0.8",
+    "qrcode": "^1.5.4",
+    "rimraf": "^6.0.1"
+  },
+  "devDependencies": {
+    "eslint": "^9.33.0",
+    "@eslint/config-array": "^0.21.0",
+    "@eslint/object-schema": "^2.1.6"
+  }
+}
